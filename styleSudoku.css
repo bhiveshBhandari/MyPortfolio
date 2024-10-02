@@ -1,0 +1,191 @@
+/* General Styles */
+* {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 10px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+#logo img {
+    width: 100%;
+}
+
+#name {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    font-size: 50px; /* Adjusted for smaller screens */
+    font-weight: bold;
+}
+
+.Heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; /* Adjusted for smaller screens */
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.Heading span {
+    color: #ff004f;
+}
+
+.sudoku_grid {
+    display: flex;
+    flex-direction: row;
+    max-width: 578px;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+
+.sudoku_grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    box-sizing: border-box;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#GetPuzzle, #SolvePuzzle {
+    display: inline-block;
+    text-decoration: none;
+    background: #ff004f;
+    padding: 10px 35px;
+    font-size: 24px;
+    margin-right: 10px;
+    color: white;
+    border-radius: 15px;
+}
+
+.box1 {
+    background-color: #555557;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.box1:hover {
+    background-color: #ff2f71;
+    color: black;
+}
+
+.box2 {
+    background-color: #8d8a88;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.box2:hover {
+    background-color: #ff004f;
+}
+
+.box3 {
+    background-color: #555557;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.box3:hover {
+    background-color: #ff2f71;
+    color: black;
+}
+
+/* Borders for the Sudoku grid */
+.bl {
+    border-left: 4px solid black;
+}
+
+.bb {
+    border-bottom: 4px solid black;
+}
+
+.br {
+    border-right: 4px solid black;
+}
+
+.bt {
+    border-top: 4px solid black;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    #name {
+        font-size: 40px; /* Adjust heading size for mobile */
+        width: 100%;
+        text-align: center;
+    }
+
+    .Header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Heading {
+        font-size: 24px; /* Reduce heading size */
+        padding: 10px;
+    }
+
+    .sudoku_grid {
+        max-width: 90%; /* Reduce grid size on smaller screens */
+    }
+
+    .sudoku_grid div {
+        width: 40px; /* Reduce cell size on mobile */
+        height: 40px;
+        font-size: 20px; /* Adjust text size inside grid cells */
+    }
+
+    #GetPuzzle, #SolvePuzzle {
+        font-size: 18px; /* Adjust button text size */
+        padding: 8px 20px;
+        margin-bottom: 10px;
+    }
+
+    .Buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    #name {
+        font-size: 30px; /* Further reduce heading size for very small screens */
+    }
+
+    .Heading {
+        font-size: 20px;
+    }
+
+    .sudoku_grid div {
+        width: 35px; /* Further reduce cell size */
+        height: 35px;
+        font-size: 18px;
+    }
+
+    #GetPuzzle, #SolvePuzzle {
+        padding: 6px 15px;
+        font-size: 16px;
+    }
+}

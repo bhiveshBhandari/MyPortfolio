@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    align-items: center;
+   display: flex;
+   justify-content: center;
+   height: 8em;
+}
+
+h3{
+    align-items: center;
+   display: flex;
+   justify-content: center;
+   height: 1em;
+}

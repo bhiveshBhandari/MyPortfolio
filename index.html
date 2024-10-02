@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhivesh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a80bcb6242.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="assets/imgs/logo.png" class="logo">
+            <ul id="sideMenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#myPortfolio">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Bhivesh</span></h1>
+            <h1>from India</h1>
+        </div>
+    </div>
+    </div>
+<!-------------------about me----------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/imgs/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a highly motivated and dedicated professional with a passion for Software and Web development and a strong interest 
+                        in cybersecurity. With a solid foundation as an<span> Assistant Software Engineer</span> at <span> MV Electrosystems</span>, where I spent
+                    <span>1 year and 8 months</span>, I gained valuable experience in developing Human Machine Interfaces (HMI) for internal testing
+                        and service engineers. I am currently pursuing a Master's in Computer Applications (MCA) with a specialization in 
+                        Cyber Security from <span> JECRC University</span>.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>&emsp;C/C++<br>&emsp;Python <br>&emsp;HTML <br>&emsp;CSS <br>&emsp;Javascript</li><br>
+                            <li><span>Programing Concepts</span><br>&emsp;Advance Data Structures and Algorithms<br>&emsp;Object-Oriented Programing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>MV Electrosystems</span><br><b>Intern Developer</b><br> Jan 2022 - Jun 2022<ul>&emsp;Assisted in design and maintenance of software <br> &emsp;Collaborated with other teammates with product development tasks
+                            <li><span>MV Electrosystems</span><br><b>Assistant Software Developer</b><br> Jul 2022 - Jul 2023<ul>&emsp;Developed window-based software for internal and field testing (Full-Stack)&emsp; <br> &emsp;Technology Used c#, MySQL and Visual Studio</ul></li>
+                        </ul>
+                    </div>
+    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>JECRC University</span><br><b>Master's of Computer Apllication</b><ul>&emsp;Jul 2023 - Jul 2025<br>&emsp;<b>CGPA - 7.2</b></ul></li><br>
+                            <li><span>Chitkara University</span><br><b>Bachelor's of Computer Apllication</b><ul>&emsp;Jul 2019 - Jul 2022<br>&emsp;<b>CGPA - 8.6</b></ul></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </div>
+
+<!--------------------My Services----------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Expertice</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Back-end Development</h2>
+                    <p>I have expertise in backend development, with experience in building scalable, secure, and efficient server-side applications. My skills include designing databases, managing APIs, and optimizing performance. I excel in languages like Javascript and NodeJS, implementing data structures, and ensuring smooth integration with frontend systems for a seamless user experience.</p>
+                    <a href="#">learn more...</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Designing</h2>
+                    <p>
+                        I have expertise in web design, creating user-friendly and visually appealing interfaces. I excel in HTML, CSS, and JavaScript, focusing on responsive design, accessibility, and cross-browser compatibility. With a keen eye for detail, I design intuitive layouts and ensure seamless user experiences across different devices and platforms.</p>
+                    <a href="#">learn more...</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-uncharted"></i>
+                    <h2>Software Development</h2>
+                    <p>
+                        I have strong expertise in software development, specializing in designing, coding, testing, and optimizing applications. Proficient in languages like C and C++, I have experience in implementing data structures, algorithms, and scalable solutions. My skills include collaborating with teams, understanding user requirements, and delivering efficient, high-quality software products.</p>
+                    <a href="#">learn more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------------My Portfolio----------------------------->
+    <div id ="myPortfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/imgs/work-1.png">
+                <div class="layer">
+                    <h3>Attendence Predictor</h3>
+                    <p>Attendance Predictor is a web application designed to help students efficiently manage their attendance.</p>
+                        <a href="attendancePredictor.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/imgs/work-2.png">
+                <div class="layer">
+                    <h3>Rock Paper Scissors</h3>
+                    <p>Rock Paper Scissors game lets a player compete against a bot by selecting rock, paper, or scissors for each round.</p>
+                        <a href="stonePaperScissors.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/imgs/work-3.png">
+                <div class="layer">
+                    <h3>Sudoku Solver</h3>
+                    <p>This is a tool that automatically solves Sudoku puzzles using algorithms like backtracking.</p>
+                        <a href="sudoku.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more.....</a>
+    </div>
+    </div>
+
+<!-------------------------Contact----------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>bhiveshbhandari08@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i>9717819182</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="example@gmail.com" required>
+                        <input type="tel" name="pnumber" placeholder="Phone Number" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Bhivesh</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

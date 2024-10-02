@@ -1,26 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
     text-align: center;
 }
 
-body{
+body {
     background: #080808;
     color: #fff;
 }
 
-h1{
-    /*background-color: #081b31;*/
+h1 {
     color: white;
     height: 5rem;
     line-height: 5rem;
 }
-h1 span{
+
+h1 span {
     color: #ff004f;
 }
 
-.choice{
+.choice {
     height: 165px;
     width: 165px;
     border-radius: 50%;
@@ -29,19 +29,19 @@ h1 span{
     align-items: center;
 }
 
-.choice:hover{
+.choice:hover {
     opacity: 0.5;
     cursor: pointer;
 }
 
-img{
+img {
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.choices{
+.choices {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@ img{
     margin-top: 5rem;
 }
 
-.score-board{
+.score-board {
     justify-content: center;
     display: flex;
     align-items: center;
@@ -58,19 +58,98 @@ img{
     gap: 5rem;
 }
 
-#user-score, #comp-score{
+#user-score, #comp-score {
     font-size: 4rem;
 }
 
-.msg-container{
+.msg-container {
     margin-top: 5rem;
 }
 
-#msg{
+#msg {
     background-color: #081b31;
     color: white;
     padding: 1rem;
     font-size: 2rem;
     display: inline;
     border-radius: 1rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .choices {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .score-board {
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 3rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+        padding: 0.75rem;
+    }
+}
+
+/* Smaller screen (e.g., mobile phones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .choices {
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .score-board {
+        gap: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 2.5rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
 }

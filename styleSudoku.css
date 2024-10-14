@@ -44,7 +44,7 @@
 }
 
 .Heading span {
-    color: #ff004f;
+    color: #196802;
 }
 
 .sudoku_grid {
@@ -76,7 +76,7 @@
 #GetPuzzle, #SolvePuzzle {
     display: inline-block;
     text-decoration: none;
-    background: #ff004f;
+    background: #196802;
     padding: 10px 35px;
     font-size: 24px;
     margin-right: 10px;
@@ -100,7 +100,7 @@
 }
 
 .box2:hover {
-    background-color: #ff004f;
+    background-color: #196802;
 }
 
 .box3 {
